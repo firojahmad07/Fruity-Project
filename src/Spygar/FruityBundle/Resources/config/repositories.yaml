@@ -1,0 +1,16 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        
+    spygar.fruits.repositroy:
+        public: true
+        class: Spygar\FruityBundle\Repository\FruitsRepository
+        arguments:
+            - '@doctrine.orm.entity_manager'
+
+    spygar.family.repositroy:
+        public: true
+        class: Spygar\FruityBundle\Repository\FamilyRepository
+        arguments:
+            - '@doctrine.orm.entity_manager'

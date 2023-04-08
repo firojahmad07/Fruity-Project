@@ -1,0 +1,19 @@
+spygar_fruity_index:
+    path: /
+    controller: spygar_index_controller::index
+
+spygar_fetch_fruits_index:
+    path: /fetch/fruits
+    controller: spygar_index_controller::list
+
+spygar_fruits_add_to_favorite:
+    path: /add/fruit/favorite
+    controller: spygar_index_controller::addToFavorite
+    
+spygar_fruit_remove_from_favorite:
+    path: /remove/fruit/favorite
+    controller: spygar_index_controller::removeFromFavorite
+
+spygar_fetch_favorite_fruites:
+    path: /fetch/favorites/fruits
+    controller: spygar_index_controller::fetchFavoriteFruits

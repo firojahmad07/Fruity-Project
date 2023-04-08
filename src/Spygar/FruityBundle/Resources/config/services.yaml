@@ -1,0 +1,16 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    spygar.fruits.service:
+        public: true
+        class: Spygar\FruityBundle\Services\FruitsService
+        arguments:
+            - '@spygar.oauth.service'
+
+    spygar.oauth.service:
+        public: true
+        class: Spygar\FruityBundle\Services\OauthService
+        arguments:
+            - '%env(APP_FRUITS_HOST)%'

@@ -1,0 +1,2 @@
+spygar_fruity_bundle:
+    resource: "@SpygarFruityBundle/Resources/config/routing.yaml"

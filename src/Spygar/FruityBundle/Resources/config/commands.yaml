@@ -1,0 +1,15 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    spygar.fruits_fetch.commmand:
+        public: true
+        class: Spygar\FruityBundle\Command\FruitsFetchCommand
+        arguments:
+            - '@spygar.fruits.repositroy'
+            - '@spygar.family.repositroy'
+            - '@spygar.fruits.service'
+            - '@mailer.mailer'
+        tags:
+            - { name: 'console.command' }
