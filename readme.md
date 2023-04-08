@@ -1,4 +1,6 @@
 ## Fruity Project
+ - Create a database
+ - Stablish connection via adding configuration in **.env** file
 
 ## System Requirenments
 - Php verions >= 7.2.5(**would be better if you will use php 8.0 that i used**)
