@@ -10,6 +10,7 @@
 ## Installation Steps
 - composer install
 - yarn install
+- php bin/console d:s:u -f
 - php bin/console ca:cl && php bin/console assets:install --symlink --relative && yarn run webpack  
 
 ## Fetch Fruits
